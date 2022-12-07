@@ -1,14 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import Ejemplor from '../views/Ejemplor.vue'
+import Ejemplo2 from '../views/Ejemplo2.vue'
+import Actualizar from "../views/actualizar.vue"
 Vue.use(VueRouter)
 
 const routes = [
+  /* ruta principal: danier*/
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'Ejemplo2',
+    component: Ejemplo2
+  },
+  {
+    path: '/actualizar/:id',
+    name: 'actualizar',
+    component: Actualizar
+  },
+  /*-------*/
+  {
+    path: '/Ejemplor',
+    name: 'Ejemplor',
+    component: Ejemplor
+  },
+  {
+    path: '/Ejemplo2',
+    name: 'Ejemplo2',
+    component: Ejemplo2
   },
   {
     path: '/about',
